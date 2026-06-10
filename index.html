@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Planner 🌹</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="step-1" class="card">
+        <div class="emoji-header">🐶</div>
+        <h1>Θα βγεις ραντεβού μαζί μου;</h1>
+        <div class="button-group">
+            <button id="yes-btn" class="btn btn-pink">ΝΑΙ! 💖</button>
+            <button id="no-btn" class="btn btn-gray">Όχι 💔</button>
+        </div>
+    </div>
+
+    <div id="step-2" class="card hidden">
+        <div class="emoji-header">📅</div>
+        <h1>Τέλεια! 😍</h1>
+        <p>Πότε είσαι ελεύθερη;</p>
+        
+        <div class="form-group">
+            <label>Διάλεξε Μέρα:</label>
+            <input type="date" id="date-input">
+        </div>
+        <div class="form-group">
+            <label>Διάλεξε Ώρα:</label>
+            <select id="time-input">
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+                <option value="21:00">21:00</option>
+                <option value="22:00">22:00</option>
+            </select>
+        </div>
+        <button id="next-to-food" class="btn btn-pink btn-full">Συνέχεια ✨</button>
+    </div>
+
+    <div id="step-3" class="card hidden">
+        <div class="emoji-header">✨</div>
+        <h1>Τι θα φάμε;</h1>
+        <p>Διάλεξε το vibe σου:</p>
+        
+        <div class="grid-options">
+            <button data-food="Pizza" class="food-card">
+                <span class="food-emoji">🍕</span>
+                <span class="food-name">Πίτσα</span>
+            </button>
+            <button data-food="Sushi" class="food-card">
+                <span class="food-emoji">🍣</span>
+                <span class="food-name">Σούσι</span>
+            </button>
+            <button data-food="Burgers" class="food-card">
+                <span class="food-emoji">🍔</span>
+                <span class="food-name">Burgers</span>
+            </button>
+            <button data-food="Tacos" class="food-card">
+                <span class="food-emoji">🌮</span>
+                <span class="food-name">Tacos</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="step-4" class="card hidden">
+        <div class="emoji-header">🚗💨</div>
+        <h1 class="highlight-text">Έκλεισε!!</h1>
+        <p id="summary-text"></p>
+        <div class="footer-note">Built by a Nerd (your boyfriend how loves you) with ❤️</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+ 
